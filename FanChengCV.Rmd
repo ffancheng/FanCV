@@ -92,7 +92,7 @@ awards <- tribble(
 ```
 
 
-# Research
+# Research experience
 
 ```{r research1, results='asis'}
 awards <- tribble(
