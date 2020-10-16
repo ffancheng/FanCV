@@ -95,7 +95,24 @@ awards <- tribble(
 
 # Research experience
 
-```{r research1, results='asis'}
+```{r researchmlann, results='asis'}
+awards <- tribble(
+  ~Start, ~End, ~Project,
+  2019.02, NA, "\\textbf{Main Participant}, Monash Ph.D. project: Manifold Learning on Empirical Probability Distributions",
+) %>%
+  arrange(-Start) %>%
+  mutate(End = replace_na(End, "")) %>%
+  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  select(Years, Project) %>%
+  baretable()
+```
+  
+  * Supervised by [Prof. Rob J Hyndman](https://robjhyndman.com) and [Associate Prof. Anastasios Panagiotelis](https://anastasiospanagiotelis.netlify.app/). 
+  * Successfully completed the first milestone in Feb 2020.
+  * Completed the main algorithm and finished all experiments using MonARCH HPC Cluster.
+  * Drafted the working paper titled *Manifold Learning with Approximate Nearest Neighbors*.
+
+```{r researchcufe, results='asis'}
 awards <- tribble(
   ~Start, ~End, ~Project,
   2018.07, 2019.01, "\\textbf{Research Assistant}, National Natural Science Foundation of China",
@@ -112,7 +129,7 @@ awards <- tribble(
   * Completed the paper titled *Volatility Analysis for Housing Prices with Bayesian Response
 Surface Optimization*.
 
-```{r research2, results='asis'}
+```{r researchietp, results='asis'}
 awards <- tribble(
   ~Start, ~End, ~Project,
   2013.04, 2014.04, "\\textbf{Project Leader}, National Undergraduate Innovation and Entrepreneurship Training Program",
