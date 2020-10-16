@@ -47,8 +47,9 @@ tribble(
 ```{r employment, results='asis'}
 tribble(
   ~Start, ~End, ~Position,
-  2019, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
-  2018, 2019, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics",
+  2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
+  2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
+  2018.07, 2019.01, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics",
 ) %>%
   arrange(-Start) %>%
   mutate(End = replace_na(End, "")) %>%
@@ -129,39 +130,39 @@ awards <- tribble(
 Losing Only-child Problem of Single-child Families*.
 
 
-# Extracurricular activities
+<!-- # Extracurricular activities -->
 
-```{r activity1, results='asis'}
-awards <- tribble(
-  ~Start, ~End, ~Project,
-  2012., 2014, "\\textbf{President}, Survey and Data Analysis Association of CUFE",
-) %>%
-  arrange(-Start) %>%
-  mutate(End = replace_na(End, "")) %>%
-  mutate(Years = paste(Start, "--", End, sep = "")) %>%
-  select(Years, Project) %>%
-  baretable()
-```
-  
-  * Planned a series of publicity activities for the association with more than 10 local universities warmly responding; repeatedly awarded Excellent Prize in student association activities and Advanced Individual Prize in CUFE.
-  * Organized a large quantity of surveys, such as campus bus timetable investigation, campus safety improvement, research on the tutor system in CUFE; obtained several prizes in the relevant contests at different levels.
-  * Twice awarded the Top Association Prize as Class A in CUFE.
+<!-- ```{r activity1, results='asis'} -->
+<!-- awards <- tribble( -->
+<!--   ~Start, ~End, ~Project, -->
+<!--   2012., 2014, "\\textbf{President}, Survey and Data Analysis Association of CUFE", -->
+<!-- ) %>% -->
+<!--   arrange(-Start) %>% -->
+<!--   mutate(End = replace_na(End, "")) %>% -->
+<!--   mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
+<!--   select(Years, Project) %>% -->
+<!--   baretable() -->
+<!-- ``` -->
 
-```{r activity2, results='asis'}
-awards <- tribble(
-  ~Start, ~End, ~Project,
-  2013, 2014, "\\textbf{Anchor and Host}, CUFE Radio Station",
-) %>%
-  arrange(-Start) %>%
-  mutate(End = replace_na(End, "")) %>%
-  mutate(Years = paste(Start, "--", End, sep = "")) %>%
-  select(Years, Project) %>%
-  baretable()
-```
-  
-  * Participated in the broadcast work for the music, travel and interview group, including the script writing, recording, editing and broadcasting.
-  * Host several shows and competitions in CUFE.
-  * Took charge of the preparation and organization of the 5th Anniversary Celebration Evening
-for thE Campus Radio Station.
+<!--   * Planned a series of publicity activities for the association with more than 10 local universities warmly responding; repeatedly awarded Excellent Prize in student association activities and Advanced Individual Prize in CUFE. -->
+<!--   * Organized a large quantity of surveys, such as campus bus timetable investigation, campus safety improvement, research on the tutor system in CUFE; obtained several prizes in the relevant contests at different levels. -->
+<!--   * Twice awarded the Top Association Prize as Class A in CUFE. -->
+
+<!-- ```{r activity2, results='asis'} -->
+<!-- awards <- tribble( -->
+<!--   ~Start, ~End, ~Project, -->
+<!--   2013, 2014, "\\textbf{Anchor and Host}, CUFE Radio Station", -->
+<!-- ) %>% -->
+<!--   arrange(-Start) %>% -->
+<!--   mutate(End = replace_na(End, "")) %>% -->
+<!--   mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
+<!--   select(Years, Project) %>% -->
+<!--   baretable() -->
+<!-- ``` -->
+
+<!--   * Participated in the broadcast work for the music, travel and interview group, including the script writing, recording, editing and broadcasting. -->
+<!--   * Host several shows and competitions in CUFE. -->
+<!--   * Took charge of the preparation and organization of the 5th Anniversary Celebration Evening -->
+<!-- for thE Campus Radio Station. -->
 
 
