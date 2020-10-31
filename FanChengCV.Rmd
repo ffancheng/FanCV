@@ -48,6 +48,7 @@ tribble(
 tribble(
   ~Start, ~End, ~Position,
   2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
+  2020.07, NA, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
   2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
   2018.07, 2019.01, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics",
 ) %>%
