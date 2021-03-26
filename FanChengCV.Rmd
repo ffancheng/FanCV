@@ -1,8 +1,9 @@
 ---
+docname: Curriculum Vitae
 name: Fan Cheng
 address: "Department of Econometrics & Business Statistics,\\tabularnewline Monash University, VIC 3145, Australia."
 www: fancheng.me
-phone: +61 3 9903 4534
+# phone: +61 3 9903 4534
 email: "Fan.Cheng@monash.edu"
 twitter: fanchengfc
 github: ffancheng
@@ -11,7 +12,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "880020"
 output: 
   vitae::hyndman 
-  # keep_tex: true
+keep_tex: true
 header_includes:
   - \ExecuteBibliographyOptions{useprefix=true}
   - renewcommand{\bibfont}{\normalfont\fontsize{12}{15}\sffamily}
@@ -30,12 +31,11 @@ source("baretable.R")
 ```{r degrees, results='asis'}
 tribble(
   ~Start, ~End, ~Degree, ~Institution,
-  2019, NA, "Ph.D. in Statistics", "Monash University",
-  2016, 2018, "M. in Applied Statistics", "Central University of Finance and Economics",
-  2012, 2016, "B.Ec in Statistics", "Central University of Finance and Economics"
+  2019, NA, "Ph.D. in Statistics", "Monash University, Australia",
+  2016, 2018, "M. in Applied Statistics", "Central University of Finance and Economics, China",
+  2012, 2016, "B.Ec in Statistics", "Central University of Finance and Economics, China"
 ) %>%
   arrange(-Start) %>%
-  #filter(Start > 2000) %>%
   mutate(End = replace_na(End, "")) %>%
   mutate(Years = paste(Start, "--", End, sep = "")) %>%
   select(Years, Degree, Institution) %>%
@@ -48,11 +48,11 @@ tribble(
 tribble(
   ~Start, ~End, ~Position,
   2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
-  2020.07, NA, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
   2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
+  2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
   2018.07, 2019.01, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics",
 ) %>%
-  arrange(-Start) %>%
+  # arrange(-Start) %>%
   mutate(End = replace_na(End, "")) %>%
   mutate(Years = paste(Start, "--", End, sep = "")) %>%
   select(Years, Position) %>%
@@ -75,25 +75,6 @@ tribble(
   baretable()
 ```
 
-# Honours and awards
-
-```{r awards, results='asis'}
-awards <- tribble(
-  ~Year, ~Award,
-  2018, "Outstanding postgraduate student, Central University of Finance and Economics (CUFE)",
-  2017, "First Prize Academic Scholarship for Graduate Student, CUFE",
-  2016, "Outstanding undergraduate student, CUFE",
-  2016, "Scholarship for All-Round Development, CUFE, each year from 2013 to 2016",
-  2016, "Scholarship for Excellent Academic Innovation",
-  2015, "Second Prize in China Undergraduate Mathematical Contest in Modeling",
-  2015, "National Endeavor Scholarship, Ministry of Education of Beijing",
-  2014, "Scholarship for Excellent Student Cadre",
-  2013, "Excellent Student Cadre, School of Statistics and Mathematics, CUFE",
-) %>%
-  baretable()
-```
-
-
 # Research experience
 
 ```{r researchmlann, results='asis'}
@@ -109,9 +90,9 @@ awards <- tribble(
 ```
   
   * Supervised by [Prof. Rob J Hyndman](https://robjhyndman.com) and [Associate Prof. Anastasios Panagiotelis](https://anastasiospanagiotelis.netlify.app/). 
-  * Successfully completed the first milestone in Feb 2020.
+  * Successfully completed the confirmation and the mid-candidature milestones.
   * Completed the main algorithm and finished all experiments using MonARCH HPC Cluster.
-  * Drafted the working paper titled *Manifold Learning with Approximate Nearest Neighbors*.
+  * Submitted the working paper titled [*Manifold Learning with Approximate Nearest Neighbors*](https://arxiv.org/abs/2103.11773).
 
 ```{r researchcufe, results='asis'}
 awards <- tribble(
@@ -147,6 +128,23 @@ awards <- tribble(
   * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for
 Losing Only-child Problem of Single-child Families*.
 
+# Honours and awards
+
+```{r awards, results='asis'}
+awards <- tribble(
+  ~Year, ~Award,
+  2018, "Outstanding postgraduate student, Central University of Finance and Economics (CUFE)",
+  2017, "First Prize Academic Scholarship for Graduate Student, CUFE",
+  2016, "Outstanding undergraduate student, CUFE",
+  2016, "Scholarship for All-Round Development, CUFE, each year from 2013 to 2016",
+  2016, "Scholarship for Excellent Academic Innovation",
+  2015, "Second Prize in China Undergraduate Mathematical Contest in Modeling",
+  2015, "National Endeavor Scholarship, Ministry of Education of Beijing",
+  2014, "Scholarship for Excellent Student Cadre",
+  2013, "Excellent Student Cadre, School of Statistics and Mathematics, CUFE",
+) %>%
+  baretable()
+```
 
 <!-- # Extracurricular activities -->
 
