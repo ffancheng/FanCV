@@ -3,7 +3,7 @@ docname: Curriculum Vitae
 name: Fan Cheng
 address: "Department of Econometrics & Business Statistics,\\tabularnewline Monash University, VIC 3145, Australia."
 www: fancheng.me
-# phone: +61 3 9903 4534
+phone: +61 3 9905 1385
 email: "Fan.Cheng@monash.edu"
 twitter: fanchengfc
 github: ffancheng
@@ -48,6 +48,7 @@ tribble(
 tribble(
   ~Start, ~End, ~Position,
   2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
+  # ETC5513 2021S1 Collaborative and reproducible practices, ETF3500/ETF5500 2020S2 High Dimensional Data Analysis
   2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
   2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
   2018.07, 2019.01, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics",
@@ -66,7 +67,7 @@ tribble(
   ~Start, ~End, ~Position,
   2016.09, 2017.09, "\\textbf{Big Data Analyst}, Shanghai Power Xene Digital Technology Company, Beijing, China",
   2016.03, 2016.04, "\\textbf{Research Assistant}, China Life Insurance Company Limited, Beijing, China",
-  2015.01, 2015.02, "\\textbf{Consultant Assistant}, Industrial and Commercial Bank of China (ICBC), \\ Hubei, China",
+  2015.01, 2015.02, "\\textbf{Consultant Assistant}, Industrial and Commercial Bank of China (ICBC), Hubei, China",
 ) %>%
   arrange(-Start) %>%
   mutate(End = replace_na(End, "")) %>%
@@ -133,6 +134,8 @@ Losing Only-child Problem of Single-child Families*.
 ```{r awards, results='asis'}
 awards <- tribble(
   ~Year, ~Award,
+  2019, "Monash Graduate Scholarship, Monash University",
+  2019, "Monash International Tuition Scholarship, Monash University",
   2018, "Outstanding postgraduate student, Central University of Finance and Economics (CUFE)",
   2017, "First Prize Academic Scholarship for Graduate Student, CUFE",
   2016, "Outstanding undergraduate student, CUFE",
