@@ -48,14 +48,16 @@ tribble(
 tribble(
   ~Start, ~End, ~Position,
   2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
-  # ETC5513 2021S1 Collaborative and reproducible practices, ETF3500/ETF5500 2020S2 High Dimensional Data Analysis
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices}, \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis}",
   2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
+   NA, NA, "- \\href{https://www.monash.edu/data-fluency/home}{Monash Data Fluency workshops} on R, Python, Git, Unix, HPC, etc.",
   2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
   2018.07, 2019.01, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics",
 ) %>%
   # arrange(-Start) %>%
   mutate(End = replace_na(End, "")) %>%
   mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  mutate(Years = ifelse(is.na(Start), "", Years)) %>% 
   select(Years, Position) %>%
   baretable()
 ```
