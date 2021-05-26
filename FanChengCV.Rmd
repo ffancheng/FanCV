@@ -136,6 +136,7 @@ Losing Only-child Problem of Single-child Families*.
 ```{r awards, results='asis'}
 awards <- tribble(
   ~Year, ~Award,
+  2021, "ACEMS Business Analytics Prize for 2021, \\href{https://acems.org.au/home}{ACEMS}",
   2019, "Monash Graduate Scholarship, Monash University",
   2019, "Monash International Tuition Scholarship, Monash University",
   2018, "Outstanding postgraduate student, Central University of Finance and Economics (CUFE)",
