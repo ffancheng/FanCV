@@ -111,13 +111,12 @@ awards <- tribble(
   
   * Assisted in the Efficient Bayesian Flexible Density Methods with High Dimensional Financial Data Project.
   * Completed the stochastic gradient descent application to the multivariate response surface.
-  * Completed the paper titled *Volatility Analysis for Housing Prices with Bayesian Response
-Surface Optimization*.
+  * Completed the paper titled *Volatility Analysis for Housing Prices with Bayesian Response Surface Optimization*.
 
 ```{r researchietp, results='asis'}
 awards <- tribble(
   ~Start, ~End, ~Project,
-  2013.04, 2014.04, "\\textbf{Project Leader}, National Undergraduate Innovation and Entrepreneurship Training Program",
+  2013.04, 2014.04, "\\textbf{Main Participant}, National Undergraduate Innovation and Entrepreneurship Training Program",
 ) %>%
   arrange(-Start) %>%
   mutate(End = replace_na(End, "")) %>%
@@ -128,8 +127,7 @@ awards <- tribble(
   
   * Initiated a municipal project, took charge of making overall arrangements for the project, from research topic design, official application of the project fund, plan of the theoretical approaches and research methods to the empirical analysis of the data collected from questionnaire.
   * Won the Excellent Prize upon the accomplishment of the research project.
-  * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for
-Losing Only-child Problem of Single-child Families*.
+  * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for Losing Only-child Problem of Single-child Families*.
 
 # Honours and awards
 
