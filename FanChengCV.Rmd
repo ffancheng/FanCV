@@ -134,7 +134,7 @@ awards <- tribble(
 ```{r awards, results='asis'}
 awards <- tribble(
   ~Year, ~Award,
-  2021, "ACEMS Business Analytics Prize for 2021, \\href{https://acems.org.au/home}{ACEMS}",
+  2021, "ACEMS Business Analytics Prize for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
   2019, "Monash Graduate Scholarship, Monash University",
   2019, "Monash International Tuition Scholarship, Monash University",
   2018, "Outstanding postgraduate student, Central University of Finance and Economics (CUFE)",
