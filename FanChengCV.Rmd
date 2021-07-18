@@ -48,7 +48,9 @@ tribble(
 tribble(
   ~Start, ~End, ~Position,
   2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
-  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices}, \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis}",
   2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
    NA, NA, "- \\href{https://www.monash.edu/data-fluency/home}{Monash Data Fluency workshops} on R, Python, Git, Unix, HPC, etc.",
   2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
@@ -125,7 +127,7 @@ awards <- tribble(
   baretable()
 ```
   
-  * Initiated a municipal project, took charge of making overall arrangements for the project, from research topic design, official application of the project fund, plan of the theoretical approaches and research methods to the empirical analysis of the data collected from questionnaire.
+  * Initiated a municipal project, made overall arrangements for the project, from research proposal, project fund application, plan of the theoretical approaches and empirical analysis of the questionnaire data.
   * Won the Excellent Prize upon the accomplishment of the research project.
   * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for Losing Only-child Problem of Single-child Families*.
 
@@ -141,10 +143,11 @@ awards <- tribble(
   2017, "First Prize Academic Scholarship for Graduate Student, CUFE",
   2016, "Outstanding undergraduate student, CUFE",
   2016, "Scholarship for All-Round Development, CUFE, each year from 2013 to 2016",
-  2016, "Scholarship for Excellent Academic Innovation",
-  2015, "Second Prize in China Undergraduate Mathematical Contest in Modeling",
+  2016, "Scholarship for Excellent Academic Innovation, CUFE",
+  2015, "Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China",
+  2015, "Second Prize in National Undergraduate Mathematical Contest in Modeling",
   2015, "National Endeavor Scholarship, Ministry of Education of Beijing",
-  2014, "Scholarship for Excellent Student Cadre",
+  2014, "Scholarship for Excellent Student Cadre, CUFE",
   2013, "Excellent Student Cadre, School of Statistics and Mathematics, CUFE",
 ) %>%
   baretable()
