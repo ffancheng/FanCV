@@ -16,6 +16,7 @@ keep_tex: true
 header_includes:
   - \ExecuteBibliographyOptions{useprefix=true}
   - renewcommand{\bibfont}{\normalfont\fontsize{12}{15}\sffamily}
+  # - \pagenumbering{gobble}
 ---
 
 ```{r setup, include=FALSE}
@@ -25,6 +26,7 @@ library(vitae)
 source("baretable.R")
 ```
 
+\thispagestyle{empty}
 
 # Education and qualifications
 
