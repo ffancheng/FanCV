@@ -1,0 +1,265 @@
+---
+docname: Curriculum Vitae
+name: Fan Cheng
+address: "Department of Econometrics & Business Statistics,\\tabularnewline Monash University, VIC 3800, Australia."
+www: fancheng.me
+# phone: +61 3 9905 1385
+email: "Fan.Cheng@monash.edu"
+twitter: fanchengfc
+github: ffancheng
+linkedin: fan-cheng
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "880020"
+output: 
+  vitae::hyndman 
+keep_tex: true
+header_includes:
+  - \ExecuteBibliographyOptions{useprefix=true}
+  - renewcommand{\bibfont}{\normalfont\fontsize{12}{15}\sffamily}
+  - \usepackage{hanging}
+  - \parindent=0pt
+  - \parskip=\medskipamount
+  # - \pagenumbering{gobble}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+source("baretable.R")
+```
+
+\thispagestyle{empty}
+
+# Education and qualifications
+
+\begin{tabular}{lll}
+  2019-- & Ph.D. in Statistics & Monash University, Australia \\ 
+        & Supervisors: & \href{https://robjhyndman.com/}{Prof. Rob J Hydman} and \href{https://anastasiospanagiotelis.netlify.app/}{A/Prof. Anastasios Panagiotelis} \\
+  2016--2018 & M. in Applied Statistics & Central University of Finance and Economics, China \\ 
+  2012--2016 & B.Ec in Statistics & Central University of Finance and Economics, China \\ 
+\end{tabular}
+  
+```{r degrees, results='asis', eval=FALSE}
+tribble(
+  ~Start, ~End, ~Degree, ~Institution,
+  2019, NA, "Ph.D. in Statistics", "Monash University, Australia",
+  # NA, NA, "Supervisors: \\href{https://robjhyndman.com/}{Prof. Rob J Hydman} and \\href{https://anastasiospanagiotelis.netlify.app/}{A/Prof. Anastasios Panagiotelis}", NA, 
+  2016, 2018, "M. in Applied Statistics", "Central University of Finance and Economics, China",
+  2012, 2016, "B.Ec in Statistics", "Central University of Finance and Economics, China"
+) %>%
+  # arrange(-Start) %>%
+  mutate(End = replace_na(as.character(End), "")) %>%
+  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  select(Years, Degree, Institution) %>%
+  baretable()
+```
+
+# Working papers
+
+\hangindent=2em
+\hangafter=1
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv preprint arXiv:2103.11773. (Under review)
+
+\hangindent=2em
+\hangafter=1
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Anomaly detection with kernel density estimation on manifolds.
+
+# Research experience
+
+<!-- # ```{r researchmlann, results='asis'} -->
+<!-- # awards <- tribble( -->
+<!-- #   ~Start, ~End, ~Project, -->
+<!-- #   2019.02, NA, "\\textbf{Main Participant}, Monash Ph.D. project: Manifold Learning on Empirical Probability Distributions", -->
+<!-- # ) %>% -->
+<!-- #   arrange(-Start) %>% -->
+<!-- #   mutate(End = replace_na(as.character(End), "")) %>% -->
+<!-- #   mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
+<!-- #   select(Years, Project) %>% -->
+<!-- #   baretable() -->
+<!-- # ``` -->
+<!-- #  -->
+<!-- #   * Supervised by [Prof. Rob J Hyndman](https://robjhyndman.com) and [Associate Prof. Anastasios Panagiotelis](https://anastasiospanagiotelis.netlify.app/). -->
+<!-- #   * Successfully completed the confirmation and the mid-candidature milestones. -->
+<!-- #   * Completed the main algorithm and finished all experiments using MonARCH HPC Cluster. -->
+<!-- #   * Submitted the working paper titled [*Computationally Efficient Learning of Statistical Manifolds*](https://arxiv.org/abs/2103.11773). -->
+
+```{r researchcufe, results='asis'}
+awards <- tribble(
+  ~Start, ~End, ~Project,
+  2018.07, 2019.01, "\\textbf{Research Assistant}, National Natural Science Foundation of China",
+) %>%
+  arrange(-Start) %>%
+  mutate(End = replace_na(as.character(End), "")) %>%
+  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  select(Years, Project) %>%
+  baretable()
+```
+  
+  * Assisted in the Efficient Bayesian Flexible Density Methods with High Dimensional Financial Data Project.
+  * Completed the stochastic gradient descent application to the multivariate response surface.
+  * Completed the thesis titled *Volatility Analysis for Housing Prices with Bayesian Response Surface Optimization*.
+
+```{r researchietp, results='asis'}
+awards <- tribble(
+  ~Start, ~End, ~Project,
+  2013.04, 2014.04, "\\textbf{Main Participant}, National Undergraduate Innovation and Entrepreneurship Training Program",
+) %>%
+  arrange(-Start) %>%
+  mutate(End = replace_na(as.character(End), "")) %>%
+  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  select(Years, Project) %>%
+  baretable()
+```
+  
+  <!-- * Initiated a municipal project, made overall arrangements for the project, from research proposal, project fund application, plan of the theoretical approaches and empirical analysis of the questionnaire data. -->
+
+  * Won the Excellent Prize upon the accomplishment of the research project.
+  * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for Losing Only-child Problem*.
+
+
+# Teaching
+
+```{r employment, results='asis'}
+tribble(
+  ~Start, ~End, ~Position,
+  2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S2}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data, 2021S2}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis, 2020S2, 2021S2}",
+  2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
+   NA, NA, "- \\href{https://www.monash.edu/data-fluency/home}{Monash Data Fluency introductory and intermidiate workshops} on R, Python, Git, Unix, HPC, etc.",
+  2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}"
+) %>%
+  # arrange(-Start) %>%
+  mutate(End = replace_na(as.character(End), "")) %>%
+  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  mutate(Years = ifelse(is.na(Start), "", Years)) %>% 
+  select(Years, Position) %>%
+  baretable()
+```
+
+# Conference presentations
+
+\hangindent=2em
+\hangafter=1
+Contributed talk, Manifold learning with approximate nearest neighbors, \href{http://ecssc2021.com.au/}{Early Career and Student Statisticians Conference 2021}, online, July 30, 2021.
+
+\hangindent=2em
+\hangafter=1
+Participants talk, Manifold learning with approximate nearest neighbors, \href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute (AMSI) Winter School 2021}, online, July 16, 2021.
+
+\hangindent=2em
+\hangafter=1
+Short interactive talk, Computationally efficient learning of statistical manifolds, \href{https://iasc-isi.org/dssv-ecda2021/}{Data Science, Statistics and Visualisation (DSSV) and European Conference on Data Analysis (ECDA)}, online, July 8, 2021.
+
+\hangindent=2em
+\hangafter=1
+Contributed talk, Manifold learning with approximate nearest neighbors, \href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}, Melbourne (Hybrid), July 6, 2021.
+
+<!-- ```{r conference, results='asis'} -->
+<!-- tribble( -->
+<!--   ~Time, ~Title, ~Conference, ~Location, -->
+<!--   "2021.07.30", "Manifold learning with approximate nearest neighbors", "\\href{http://ecssc2021.com.au/}{Early Career and Student Statisticians Conference 2021}", "Australia (Online)", -->
+<!--   "2021.07.16", "Manifold learning with approximate nearest neighbors", "\\href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute (AMSI) Winter School 2021}", "Hybrid Event Hosted By Queensland University of Technology", -->
+<!--   "2021.07.06", "Manifold learning with approximate nearest neighbors", "\\href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}", "Australia (Hybrid)" -->
+<!-- ) %>% -->
+<!--   # arrange(-Start) %>% -->
+<!--   # mutate(End = replace_na(as.character(End), "")) %>% -->
+<!--   # mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
+<!--   # select(Years, Position) %>% -->
+<!--   baretable() -->
+<!-- ``` -->
+
+# Society memberships
+
+```{r society, results='asis'}
+tribble(
+  ~Position, ~Society,
+  "Member", "Statistical Society of Australia",
+  "Member", "International Association for Statistical Computing",
+  "Member", "Australian Research Council Centre of Excellence for Mathematical and Statistical Frontiers (ACEMS)"
+) %>%
+  # arrange(-Start) %>%
+  # mutate(End = replace_na(as.character(End), "")) %>%
+  # mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  # select(Years, Position) %>%
+  baretable()
+```
+
+
+# Internship experience
+
+```{r internship, results='asis'}
+tribble(
+  ~Start, ~End, ~Position,
+  2016.09, 2017.09, "\\textbf{Big Data Analyst}, Shanghai Power Xene Digital Technology Company, Beijing, China",
+  2016.03, 2016.04, "\\textbf{Research Assistant}, China Life Insurance Company Limited, Beijing, China",
+  2015.01, 2015.02, "\\textbf{Consultant Assistant}, Industrial and Commercial Bank of China (ICBC), Hubei, China",
+) %>%
+  arrange(-Start) %>%
+  mutate(End = replace_na(as.character(End), "")) %>%
+  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  select(Years, Position) %>%
+  baretable()
+```
+
+# Honours and awards
+
+```{r awards, results='asis'}
+awards <- tribble(
+  ~Year, ~Award,
+  2021, "Runner-up for AMSI Winter School Participants Talk, \\href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute}",
+  2021, "ACEMS Business Analytics Prize(\\$3000) for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
+  2019, "Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022",
+  2019, "Monash International Tuition Scholarship, Monash University, yearly from 2019 to 2022",
+  2018, "Outstanding Postgraduate Student, Central University of Finance and Economics (CUFE)",
+  2017, "First Prize Academic Scholarship for Graduate Student, CUFE",
+  2016, "Outstanding Undergraduate Student, CUFE",
+  2016, "Scholarship for All-Round Development, CUFE, yearly from 2013 to 2016",
+  2016, "Scholarship for Excellent Academic Innovation, CUFE",
+  2015, "Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China",
+  2015, "Second Prize in National Undergraduate Mathematical Contest in Modeling",
+  2015, "National Endeavor Scholarship, Ministry of Education of Beijing",
+  2014, "Scholarship for Excellent Student Cadre, CUFE",
+  2013, "Excellent Student Cadre, School of Statistics and Mathematics, CUFE",
+) %>%
+  baretable()
+```
+
+<!-- # Extracurricular activities -->
+
+<!-- ```{r activity1, results='asis'} -->
+<!-- awards <- tribble( -->
+<!--   ~Start, ~End, ~Project, -->
+<!--   2012., 2014, "\\textbf{President}, Survey and Data Analysis Association of CUFE", -->
+<!-- ) %>% -->
+<!--   arrange(-Start) %>% -->
+<!--   mutate(End = replace_na(as.character(End), "")) %>% -->
+<!--   mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
+<!--   select(Years, Project) %>% -->
+<!--   baretable() -->
+<!-- ``` -->
+
+<!--   * Planned a series of publicity activities for the association with more than 10 local universities warmly responding; repeatedly awarded Excellent Prize in student association activities and Advanced Individual Prize in CUFE. -->
+<!--   * Organized a large quantity of surveys, such as campus bus timetable investigation, campus safety improvement, research on the tutor system in CUFE; obtained several prizes in the relevant contests at different levels. -->
+<!--   * Twice awarded the Top Association Prize as Class A in CUFE. -->
+
+<!-- ```{r activity2, results='asis'} -->
+<!-- awards <- tribble( -->
+<!--   ~Start, ~End, ~Project, -->
+<!--   2013, 2014, "\\textbf{Anchor and Host}, CUFE Radio Station", -->
+<!-- ) %>% -->
+<!--   arrange(-Start) %>% -->
+<!--   mutate(End = replace_na(as.character(End), "")) %>% -->
+<!--   mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
+<!--   select(Years, Project) %>% -->
+<!--   baretable() -->
+<!-- ``` -->
+
+<!--   * Participated in the broadcast work for the music, travel and interview group, including the script writing, recording, editing and broadcasting. -->
+<!--   * Host several shows and competitions in CUFE. -->
+<!--   * Took charge of the preparation and organization of the 5th Anniversary Celebration Evening -->
+<!-- for thE Campus Radio Station. -->
+
+

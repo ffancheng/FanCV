@@ -1,7 +1,7 @@
 ---
 docname: Curriculum Vitae
 name: Fan Cheng
-address: "Department of Econometrics & Business Statistics,\\tabularnewline Monash University, VIC 3145, Australia."
+address: "Department of Econometrics & Business Statistics,\\tabularnewline Monash University, VIC 3800, Australia."
 www: fancheng.me
 # phone: +61 3 9905 1385
 email: "Fan.Cheng@monash.edu"
