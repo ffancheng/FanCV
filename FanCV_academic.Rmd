@@ -35,8 +35,10 @@ source("baretable.R")
 
 \begin{tabular}{lll}
   2019-- & Ph.D. in Statistics & Monash University, Australia \\ 
-        & Supervisors: & \href{https://robjhyndman.com/}{Prof. Rob J Hydman} and \href{https://anastasiospanagiotelis.netlify.app/}{A/Prof. Anastasios Panagiotelis} \\
+        & Thesis: & \emph{Manifold Learning on Empirical Probability Distributions} \\
+        & Supervisors: & \href{https://robjhyndman.com/}{Prof. Rob J Hydman} and \href{https://anastasiospanagiotelis.netlify.app/}{A/Prof. Anastasios Panagiotelis} \\        
   2016--2018 & M. in Applied Statistics & Central University of Finance and Economics, China \\ 
+        & Supervisors: & \href{https://feng.li/}{A/Prof. Feng Li} \\
   2012--2016 & B.Ec in Statistics & Central University of Finance and Economics, China \\ 
 \end{tabular}
   
@@ -87,7 +89,7 @@ Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Anomaly detection with ker
 ```{r researchcufe, results='asis'}
 awards <- tribble(
   ~Start, ~End, ~Project,
-  2018.07, 2019.01, "\\textbf{Research Assistant}, National Natural Science Foundation of China",
+  2018.07, 2019.01, "\\textbf{Research Assistant}, National Natural Science Foundation of China Project: NSFC-11501587",
 ) %>%
   arrange(-Start) %>%
   mutate(End = replace_na(as.character(End), "")) %>%
@@ -96,14 +98,14 @@ awards <- tribble(
   baretable()
 ```
   
-  * Assisted in the Efficient Bayesian Flexible Density Methods with High Dimensional Financial Data Project.
-  * Completed the stochastic gradient descent application to the multivariate response surface.
-  * Completed the thesis titled *Volatility Analysis for Housing Prices with Bayesian Response Surface Optimization*.
+  * Assisted in the project *Efficient Bayesian Flexible Density Methods with High Dimensional Financial Data*.
+  * Completed the stochastic gradient descent application of housing price to the multivariate response surface model.
+  * Completed the thesis titled *Volatility Analysis of Housing Prices with Bayesian Response Surface Optimization*.
 
 ```{r researchietp, results='asis'}
 awards <- tribble(
   ~Start, ~End, ~Project,
-  2013.04, 2014.04, "\\textbf{Main Participant}, National Undergraduate Innovation and Entrepreneurship Training Program",
+  2013.04, 2014.04, "\\textbf{Main Participant}, National Undergraduate Innovation and Entrepreneurship Training Program of China",
 ) %>%
   arrange(-Start) %>%
   mutate(End = replace_na(as.character(End), "")) %>%
@@ -112,13 +114,13 @@ awards <- tribble(
   baretable()
 ```
   
-  <!-- * Initiated a municipal project, made overall arrangements for the project, from research proposal, project fund application, plan of the theoretical approaches and empirical analysis of the questionnaire data. -->
+  * Initiated a municipal project, made overall arrangements for the project, from research proposal, project fund application, plan of the theoretical approaches and empirical analysis of the questionnaire data.
 
   * Won the Excellent Prize upon the accomplishment of the research project.
   * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for Losing Only-child Problem*.
 
 
-# Teaching
+# Teaching experience
 
 ```{r employment, results='asis'}
 tribble(
@@ -157,6 +159,14 @@ Short interactive talk, Computationally efficient learning of statistical manifo
 \hangafter=1
 Contributed talk, Manifold learning with approximate nearest neighbors, \href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}, Melbourne (Hybrid), July 6, 2021.
 
+\hangindent=2em
+\hangafter=1
+Contributed talk, Manifold learning with approximate nearest neighbors, \href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}, Melbourne (Hybrid), July 6, 2021.
+
+\hangindent=2em
+\hangafter=1
+Contributed talk, Getting it right: improving forecast accuracy and learning techniques Session, Monash Business School Doctoral Research Colloquium, Melbourne, December 6, 2020.
+
 <!-- ```{r conference, results='asis'} -->
 <!-- tribble( -->
 <!--   ~Time, ~Title, ~Conference, ~Location, -->
@@ -176,8 +186,8 @@ Contributed talk, Manifold learning with approximate nearest neighbors, \href{ht
 ```{r society, results='asis'}
 tribble(
   ~Position, ~Society,
-  "Member", "Statistical Society of Australia",
-  "Member", "International Association for Statistical Computing",
+  "Member", "Statistical Society of Australia (SSA)",
+  "Member", "International Association for Statistical Computing (IASC)",
   "Member", "Australian Research Council Centre of Excellence for Mathematical and Statistical Frontiers (ACEMS)"
 ) %>%
   # arrange(-Start) %>%
@@ -201,6 +211,22 @@ tribble(
   mutate(End = replace_na(as.character(End), "")) %>%
   mutate(Years = paste(Start, "--", End, sep = "")) %>%
   select(Years, Position) %>%
+  baretable()
+```
+
+# Computer Skills
+
+```{r computer, results='asis'}
+tribble(
+  ~language,
+  "Proficient in R, Git/GitHub",
+  "Skilled in GNU/Linux and have experience on high performance Linux clusters",
+  "Intermediate in Python, HTML/CSS"
+) %>%
+  # arrange(-Start) %>%
+  # mutate(End = replace_na(as.character(End), "")) %>%
+  # mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  # select(Years, Position) %>%
   baretable()
 ```
 
