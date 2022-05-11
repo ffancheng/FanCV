@@ -181,23 +181,6 @@ Contributed talk, Getting it right: improving forecast accuracy and learning tec
 <!--   baretable() -->
 <!-- ``` -->
 
-# Society memberships
-
-```{r society, results='asis'}
-tribble(
-  ~Position, ~Society,
-  "Member", "Statistical Society of Australia (SSA)",
-  "Member", "International Association for Statistical Computing (IASC)",
-  "Member", "Australian Research Council Centre of Excellence for Mathematical and Statistical Frontiers (ACEMS)"
-) %>%
-  # arrange(-Start) %>%
-  # mutate(End = replace_na(as.character(End), "")) %>%
-  # mutate(Years = paste(Start, "--", End, sep = "")) %>%
-  # select(Years, Position) %>%
-  baretable()
-```
-
-
 # Internship experience
 
 ```{r internship, results='asis'}
@@ -214,12 +197,28 @@ tribble(
   baretable()
 ```
 
-# Computer Skills
+# Society memberships
+
+```{r society, results='asis'}
+tribble(
+  ~Position, ~Society,
+  "Member", "Statistical Society of Australia (SSA)",
+  "Member", "International Association for Statistical Computing (IASC)",
+  "Member", "Australian Research Council Centre of Excellence for Mathematical and Statistical Frontiers (ACEMS)"
+) %>%
+  # arrange(-Start) %>%
+  # mutate(End = replace_na(as.character(End), "")) %>%
+  # mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  # select(Years, Position) %>%
+  baretable()
+```
+
+# Computer skills
 
 ```{r computer, results='asis'}
 tribble(
   ~language,
-  "Proficient in R, Git/GitHub",
+  "Proficient in R, Git/GitHub, LaTex",
   "Skilled in GNU/Linux and have experience on high performance Linux clusters",
   "Intermediate in Python, HTML/CSS"
 ) %>%
@@ -235,6 +234,8 @@ tribble(
 ```{r awards, results='asis'}
 awards <- tribble(
   ~Year, ~Award,
+  2022, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETF3500 2021S2, Monash Business School", 
+  2021, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2021S1, Monash Business School", 
   2021, "Runner-up for AMSI Winter School Participants Talk, \\href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute}",
   2021, "ACEMS Business Analytics Prize(\\$3000) for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
   2019, "Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022",
