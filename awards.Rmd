@@ -1,0 +1,61 @@
+---
+docname: Awards
+name: Fan Cheng
+address: "Department of Econometrics & Business Statistics,\\tabularnewline Monash University, VIC 3800, Australia."
+www: fancheng.me
+# phone: +61 3 9905 1385
+email: "Fan.Cheng@monash.edu"
+twitter: fanchengfc
+github: ffancheng
+linkedin: fan-cheng
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "880020"
+output: 
+  vitae::hyndman 
+keep_tex: true
+header_includes:
+  - \ExecuteBibliographyOptions{useprefix=true}
+  - renewcommand{\bibfont}{\normalfont\fontsize{12}{15}\sffamily}
+  - \usepackage{hanging}
+  - \parindent=0pt
+  - \parskip=\medskipamount
+  # - \pagenumbering{gobble}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+source("baretable.R")
+```
+
+\thispagestyle{empty}
+
+# Awards and prizes list
+
+```{r awards, results='asis'}
+awards <- tribble(
+  ~Year, ~Award,
+  2022, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETF3500 2021S2, Monash Business School", 
+  2021, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2021S1, Monash Business School", 
+  2021, "Runner-up for AMSI Winter School 2021 Participants Talk, \\href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute}",
+  2021, "ACEMS Business Analytics Prize(\\$3000) for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
+  2019, "Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022",
+  2019, "Monash International Tuition Scholarship, Monash University, yearly from 2019 to 2022",
+  2018, "Outstanding Postgraduate Student, Central University of Finance and Economics (CUFE)",
+  2017, "First Prize Academic Scholarship for Graduate Student, CUFE",
+  2016, "Outstanding Undergraduate Student, CUFE",
+  2016, "Scholarship for All-Round Development, CUFE, yearly from 2013 to 2016",
+  2016, "Scholarship for Excellent Academic Innovation, CUFE",
+  2015, "Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China",
+  2015, "Second Prize in National Undergraduate Mathematical Contest in Modeling",
+  2015, "National Endeavor Scholarship, Ministry of Education of Beijing",
+  2014, "Scholarship for Excellent Student Cadre, CUFE",
+  2013, "Excellent Student Cadre, School of Statistics and Mathematics, CUFE",
+) %>%
+  baretable()
+```
+
+
+
+

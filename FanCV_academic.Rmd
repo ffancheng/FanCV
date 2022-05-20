@@ -89,7 +89,7 @@ Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Anomaly detection with ker
 ```{r researchcufe, results='asis'}
 awards <- tribble(
   ~Start, ~End, ~Project,
-  2018.07, 2019.01, "\\textbf{Research Assistant}, National Natural Science Foundation of China Project: NSFC-11501587",
+  2018.07, 2019.01, "\\textbf{Research Assistant}, National Natural Science Foundation of China Project",
 ) %>%
   arrange(-Start) %>%
   mutate(End = replace_na(as.character(End), "")) %>%

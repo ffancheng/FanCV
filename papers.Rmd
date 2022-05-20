@@ -1,0 +1,42 @@
+---
+docname: Publications
+name: Fan Cheng
+address: "Department of Econometrics & Business Statistics,\\tabularnewline Monash University, VIC 3800, Australia."
+www: fancheng.me
+# phone: +61 3 9905 1385
+email: "Fan.Cheng@monash.edu"
+twitter: fanchengfc
+github: ffancheng
+linkedin: fan-cheng
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "880020"
+output: 
+  vitae::hyndman 
+keep_tex: true
+header_includes:
+  - \ExecuteBibliographyOptions{useprefix=true}
+  - renewcommand{\bibfont}{\normalfont\fontsize{12}{15}\sffamily}
+  - \usepackage{hanging}
+  - \parindent=0pt
+  - \parskip=\medskipamount
+  # - \pagenumbering{gobble}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+source("baretable.R")
+```
+
+\thispagestyle{empty}
+
+# Working papers
+
+\hangindent=2em
+\hangafter=1
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv preprint arXiv:2103.11773. (Under review)
+
+\hangindent=2em
+\hangafter=1
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Anomaly Detection with Kernel Density Estimation on Manifolds.
