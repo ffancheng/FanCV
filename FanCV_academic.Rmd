@@ -38,7 +38,7 @@ source("baretable.R")
         & Thesis: & \emph{Manifold Learning on Empirical Probability Distributions} \\
         & Supervisors: & \href{https://robjhyndman.com/}{Prof. Rob J Hydman} and \href{https://anastasiospanagiotelis.netlify.app/}{A/Prof. Anastasios Panagiotelis} \\        
   2016--2018 & M. in Applied Statistics & Central University of Finance and Economics, China \\ 
-        & Supervisors: & \href{https://feng.li/}{A/Prof. Feng Li} \\
+        & Supervisor: & \href{https://feng.li/}{A/Prof. Feng Li} \\
   2012--2016 & B.Ec in Statistics & Central University of Finance and Economics, China \\ 
 \end{tabular}
   
@@ -254,39 +254,32 @@ awards <- tribble(
   baretable()
 ```
 
-<!-- # Extracurricular activities -->
+# Referees
 
-<!-- ```{r activity1, results='asis'} -->
-<!-- awards <- tribble( -->
-<!--   ~Start, ~End, ~Project, -->
-<!--   2012., 2014, "\\textbf{President}, Survey and Data Analysis Association of CUFE", -->
-<!-- ) %>% -->
-<!--   arrange(-Start) %>% -->
-<!--   mutate(End = replace_na(as.character(End), "")) %>% -->
-<!--   mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
-<!--   select(Years, Project) %>% -->
-<!--   baretable() -->
-<!-- ``` -->
+\href{https://robjhyndman.com/}{Professor Rob J Hyndman}
 
-<!--   * Planned a series of publicity activities for the association with more than 10 local universities warmly responding; repeatedly awarded Excellent Prize in student association activities and Advanced Individual Prize in CUFE. -->
-<!--   * Organized a large quantity of surveys, such as campus bus timetable investigation, campus safety improvement, research on the tutor system in CUFE; obtained several prizes in the relevant contests at different levels. -->
-<!--   * Twice awarded the Top Association Prize as Class A in CUFE. -->
+FAA FASSA
 
-<!-- ```{r activity2, results='asis'} -->
-<!-- awards <- tribble( -->
-<!--   ~Start, ~End, ~Project, -->
-<!--   2013, 2014, "\\textbf{Anchor and Host}, CUFE Radio Station", -->
-<!-- ) %>% -->
-<!--   arrange(-Start) %>% -->
-<!--   mutate(End = replace_na(as.character(End), "")) %>% -->
-<!--   mutate(Years = paste(Start, "--", End, sep = "")) %>% -->
-<!--   select(Years, Project) %>% -->
-<!--   baretable() -->
-<!-- ``` -->
+Head of Department
 
-<!--   * Participated in the broadcast work for the music, travel and interview group, including the script writing, recording, editing and broadcasting. -->
-<!--   * Host several shows and competitions in CUFE. -->
-<!--   * Took charge of the preparation and organization of the 5th Anniversary Celebration Evening -->
-<!-- for thE Campus Radio Station. -->
+Department of Econometrics and Business Statistics
 
+Monash University, VIC 3800, Australia
 
+Email: rob.hyndman@monash.edu
+
+Telephone: + 61 3 990 52358
+
+\bigskip
+
+\href{https://anastasiospanagiotelis.netlify.app/}{Associate Professor Anastasios Panagiotelis}
+
+Director of the International Institute of Forecasters
+
+Discipline of Business Analytics
+
+University of Sydney, NSW 2006, Australia
+
+Email: anastasios.panagiotelis@sydney.edu.au
+
+Telephone: +61 2 9114 4742
