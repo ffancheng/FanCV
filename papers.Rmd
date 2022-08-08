@@ -39,4 +39,4 @@ Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient 
 
 \hangindent=2em
 \hangafter=1
-Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Anomaly Detection with Kernel Density Estimation on Manifolds.
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Distortion-Corrected Kernel Density Estimate on Riemannian Manifolds.

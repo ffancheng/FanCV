@@ -8,16 +8,17 @@ email: "Fan.Cheng@monash.edu"
 twitter: fanchengfc
 github: ffancheng
 linkedin: fan-cheng
+orcid: 0000-0003-0009-3262
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "880020"
 output: 
-  vitae::hyndman 
-keep_tex: true
+  vitae::hyndman: 
+    keep_tex: true
 header_includes:
   - \ExecuteBibliographyOptions{useprefix=true}
   - renewcommand{\bibfont}{\normalfont\fontsize{12}{15}\sffamily}
   - \usepackage{hanging}
-  - \parindent=0pt
+  - \parindent=1pt
   - \parskip=\medskipamount
   # - \pagenumbering{gobble}
 ---
@@ -59,13 +60,15 @@ tribble(
 
 # Working papers
 
-\hangindent=2em
-\hangafter=1
-Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv preprint arXiv:2103.11773. (Under review)
+\hangindent=0.5em\hangafter=0
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv 
 
-\hangindent=2em
-\hangafter=1
-Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Distortion-corrected kernel density estimate on Riemannian manifolds.
+\hangindent=2em\hangafter=0 preprint arXiv:2103.11773. (Under review)
+
+\hangindent=0.5em\hangafter=0
+Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). Distortion-corrected kernel density estimate on Riemannian
+
+\hangindent=2em\hangafter=0 manifolds.
 
 # Research experience
 
@@ -80,7 +83,7 @@ Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2022). Distortion-corrected kerne
 <!-- #   select(Years, Project) %>% -->
 <!-- #   baretable() -->
 <!-- # ``` -->
-<!-- #  -->
+<!-- # -->
 <!-- #   * Supervised by [Prof. Rob J Hyndman](https://robjhyndman.com) and [Associate Prof. Anastasios Panagiotelis](https://anastasiospanagiotelis.netlify.app/). -->
 <!-- #   * Successfully completed the confirmation and the mid-candidature milestones. -->
 <!-- #   * Completed the main algorithm and finished all experiments using MonARCH HPC Cluster. -->
@@ -115,7 +118,6 @@ awards <- tribble(
 ```
   
   * Initiated a municipal project, made overall arrangements for the project, from research proposal, project fund application, plan of the theoretical approaches and empirical analysis of the questionnaire data.
-
   * Won the Excellent Prize upon the accomplishment of the research project.
   * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for Losing Only-child Problem*.
 
@@ -143,29 +145,18 @@ tribble(
 
 # Conference presentations
 
-\hangindent=2em
-\hangafter=1
-Contributed talk, Manifold learning with approximate nearest neighbors, \href{http://ecssc2021.com.au/}{Early Career and Student Statisticians Conference 2021}, online, July 30, 2021.
+<!-- \hangindent=0.5em\hangafter=0 -->
+- Contributed talk, Manifold learning with approximate nearest neighbors, \href{http://ecssc2021.com.au/}{Early Career and Student Statisticians Conference 2021}, online, July 30, 2021.
 
-\hangindent=2em
-\hangafter=1
-Participants talk, Manifold learning with approximate nearest neighbors, \href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute (AMSI) Winter School 2021}, online, July 16, 2021.
+- Participants talk, Manifold learning with approximate nearest neighbors, \href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute (AMSI) Winter School 2021}, online, July 16, 2021.
 
-\hangindent=2em
-\hangafter=1
-Short interactive talk, Computationally efficient learning of statistical manifolds, \href{https://iasc-isi.org/dssv-ecda2021/}{Data Science, Statistics and Visualisation (DSSV) and European Conference on Data Analysis (ECDA)}, online, July 8, 2021.
+- Short interactive talk, Computationally efficient learning of statistical manifolds, \href{https://iasc-isi.org/dssv-ecda2021/}{Data Science, Statistics and Visualisation (DSSV) and European Conference on Data Analysis (ECDA)}, online, July 8, 2021.
 
-\hangindent=2em
-\hangafter=1
-Contributed talk, Manifold learning with approximate nearest neighbors, \href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}, Melbourne (Hybrid), July 6, 2021.
+- Contributed talk, Manifold learning with approximate nearest neighbors, \href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}, Melbourne (Hybrid), July 6, 2021.
 
-\hangindent=2em
-\hangafter=1
-Contributed talk, Manifold learning with approximate nearest neighbors, \href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}, Melbourne (Hybrid), July 6, 2021.
+- Contributed talk, Manifold learning with approximate nearest neighbors, \href{https://anzsc2021.com.au/}{Australian Statistical Society and New Zealand Statistical Association Conference 2021}, Melbourne (Hybrid), July 6, 2021.
 
-\hangindent=2em
-\hangafter=1
-Contributed talk, Getting it right: improving forecast accuracy and learning techniques Session, Monash Business School Doctoral Research Colloquium, Melbourne, December 6, 2020.
+- Contributed talk, Getting it right: improving forecast accuracy and learning techniques Session, Monash Business School Doctoral Research Colloquium, Melbourne, December 6, 2020.
 
 <!-- ```{r conference, results='asis'} -->
 <!-- tribble( -->
@@ -231,11 +222,33 @@ tribble(
 
 # Honours and awards
 
-```{r awards, results='asis'}
+\begin{tabular}{rl}
+  2022 & Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2022S1, Monash Business School \\ 
+  2022 & Purple Letter for Tutoring ETF3500 2021S2, Monash Business School \\ 
+  2021 & Purple Letter for Tutoring ETC5513 2021S1, Monash Business School \\ 
+  2021 & Runner-up for AMSI Winter School Participants Talk, \href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute} \\ 
+  2021 & ACEMS Business Analytics Prize(\$3000) for 2021, \href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \& Statistical Frontiers} \\ 
+  2019 & Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022 \\ 
+  2019 & Monash International Tuition Scholarship, Monash University, yearly from 2019 to 2022 \\ 
+  2018 & Outstanding Postgraduate Student, Central University of Finance and Economics (CUFE) \\ 
+  2017 & First Prize Academic Scholarship for Graduate Student, CUFE \\ 
+  2016 & Outstanding Undergraduate Student, CUFE \\ 
+  2016 & Scholarship for All-Round Development, CUFE, yearly from 2013 to 2016 \\ 
+  2016 & Scholarship for Excellent Academic Innovation, CUFE \\ 
+  2015 & Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China \\ 
+  2015 & Second Prize in Contemporary Undergraduate Mathematical Contest in Modeling, \\
+       & China Society for Industrial and Applied Mathematics \\ 
+  2015 & National Endeavor Scholarship, Beijing Municipal Commission of Education \\ 
+  2014 & Scholarship for Excellent Student Cadre, CUFE \\ 
+  2013 & Excellent Student Cadre, School of Statistics and Mathematics, CUFE \\ 
+\end{tabular}
+  
+```{r awards, results='asis', eval=FALSE}
 awards <- tribble(
   ~Year, ~Award,
-  2022, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETF3500 2021S2, Monash Business School", 
-  2021, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2021S1, Monash Business School", 
+  2022, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2022S1, Monash Business School",
+  2022, "Purple Letter for Tutoring ETF3500 2021S2, Monash Business School", 
+  2021, "Purple Letter for Tutoring ETC5513 2021S1, Monash Business School", 
   2021, "Runner-up for AMSI Winter School Participants Talk, \\href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute}",
   2021, "ACEMS Business Analytics Prize(\\$3000) for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
   2019, "Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022",
@@ -246,8 +259,9 @@ awards <- tribble(
   2016, "Scholarship for All-Round Development, CUFE, yearly from 2013 to 2016",
   2016, "Scholarship for Excellent Academic Innovation, CUFE",
   2015, "Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China",
-  2015, "Second Prize in National Undergraduate Mathematical Contest in Modeling",
-  2015, "National Endeavor Scholarship, Ministry of Education of Beijing",
+  2015, "\\small{Second Prize in Contemporary Undergraduate Mathematical Contest in Modeling}, \\newline
+   China Society for Industrial and Applied Mathematics",
+  2015, "National Endeavor Scholarship, Beijing Municipal Commission of Education",
   2014, "Scholarship for Excellent Student Cadre, CUFE",
   2013, "Excellent Student Cadre, School of Statistics and Mathematics, CUFE",
 ) %>%

@@ -36,10 +36,11 @@ source("baretable.R")
 ```{r awards, results='asis'}
 awards <- tribble(
   ~Year, ~Award,
-  2022, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETF3500 2021S2, Monash Business School", 
-  2021, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2021S1, Monash Business School", 
+  2022, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2022S1, Monash Business School",
+  2022, "Purple Letter for Tutoring ETF3500 2021S2, Monash Business School", 
+  2021, "Purple Letter for Tutoring ETC5513 2021S1, Monash Business School", 
   2021, "Runner-up for AMSI Winter School 2021 Participants Talk, \\href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute}",
-  2021, "ACEMS Business Analytics Prize(\\$3000) for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
+  2021, "ACEMS Business Analytics Prize for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
   2019, "Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022",
   2019, "Monash International Tuition Scholarship, Monash University, yearly from 2019 to 2022",
   2018, "Outstanding Postgraduate Student, Central University of Finance and Economics (CUFE)",
