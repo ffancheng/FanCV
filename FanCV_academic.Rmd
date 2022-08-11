@@ -234,8 +234,8 @@ tribble(
   2016 & Scholarship for All-Round Development, CUFE, yearly from 2013 to 2016 \\ 
   2016 & Scholarship for Excellent Academic Innovation, CUFE \\ 
   2015 & Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China \\ 
-  2015 & Second Prize in Contemporary Undergraduate Mathematical Contest in Modeling, \\
-       & China Society for Industrial and Applied Mathematics \\ 
+  2015 & Second Prize in Contemporary Undergraduate Mathematical Contest in Modeling, China Society for Industrial \\
+       & and Applied Mathematics \\ 
   2015 & National Endeavor Scholarship, Beijing Municipal Commission of Education \\ 
   2014 & Scholarship for Excellent Student Cadre, CUFE \\ 
   2013 & Excellent Student Cadre, School of Statistics and Mathematics, CUFE \\ 
