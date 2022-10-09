@@ -146,6 +146,11 @@ tribble(
 # Conference presentations
 
 <!-- \hangindent=0.5em\hangafter=0 -->
+
+<!-- - Invited talk, Anomaly detection and forecasting using machine learning methods, \href{http://www.cfenetwork.org/CFE2022/index.php}{The 16th International Conference on Computational and Financial Econometrics (CFE 2022)}, King's College London, UK, December 17-19, 2022. -->
+
+- Contributed talk, Anomaly detection with kernel density estimation on manifolds, \href{http://www.compstat2022.org/index.php}{The 24th International Conference on Computational Statistics}, The University of Bologna, Italy, August 23-26, 2022.
+
 - Contributed talk, Manifold learning with approximate nearest neighbors, \href{http://ecssc2021.com.au/}{Early Career and Student Statisticians Conference 2021}, online, July 30, 2021.
 
 - Participants talk, Manifold learning with approximate nearest neighbors, \href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute (AMSI) Winter School 2021}, online, July 16, 2021.
@@ -271,8 +276,6 @@ awards <- tribble(
 \href{https://robjhyndman.com/}{Professor Rob J Hyndman}
 
 FAA FASSA
-
-Head of Department
 
 Department of Econometrics and Business Statistics
 
