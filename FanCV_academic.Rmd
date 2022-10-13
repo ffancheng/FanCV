@@ -226,6 +226,7 @@ tribble(
 # Honours and awards
 
 \begin{tabular}{rl}
+  2022 & Graduate Research Completion Award (GRCA), Monash University \\
   2022 & Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2022S1, Monash Business School \\ 
   2022 & Purple Letter for Tutoring ETF3500 2021S2, Monash Business School \\ 
   2021 & Purple Letter for Tutoring ETC5513 2021S1, Monash Business School \\ 
