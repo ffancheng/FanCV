@@ -1,0 +1,398 @@
+%% Template for a CV
+%% Author: Rob J Hyndman
+
+\documentclass[10pt,a4paper,]{article}
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage[sfdefault,lf,t]{carlito}
+
+% Change color to blue
+\usepackage{color,xcolor}
+\definecolor{headcolor}{HTML}{880020}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true,hidelinks]{hyperref}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{geometry}
+\geometry{left=1.75cm,right=1.75cm,top=2.2cm,bottom=2cm}
+
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\date{May 2024}
+
+
+\usepackage{paralist,ragged2e,datetime}
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr,enumitem,pifont}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+\RaggedRight
+\sloppy
+
+% Header and footer
+\pagestyle{fancy}
+\makeatletter
+\lhead{\sf\textcolor[gray]{0.4}{Curriculum Vitae: \@name}}
+\rhead{\sf\textcolor[gray]{0.4}{\thepage}}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\makeatother
+
+% Header box
+\usepackage{tabularx}
+
+\makeatletter
+\def\name#1{\def\@name{#1}}
+\def\info#1{\def\@info{#1}}
+\makeatother
+\newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+
+\usepackage{calc}
+\newlength{\headerboxwidth}
+\setlength{\headerboxwidth}{\textwidth}
+%\addtolength{\headerboxwidth}{0.2cm}
+\makeatletter
+\def\maketitle{
+\thispagestyle{plain}
+\vspace*{-1.4cm}
+\shadebox[0.9]{\headerboxwidth}{\sf\color{headcolor}\hfil
+\hbox to 0.98\textwidth{\begin{tabular}{l}
+\\[-0.3cm]
+\LARGE\textbf{\@name}
+\\[0.7cm]
+\normalsize\textbf{Curriculum Vitae}\\
+\normalsize May 2024
+\end{tabular}
+\hfill\hbox{\fontsize{9}{12}\sf
+\begin{tabular}{@{}rl@{}}
+\@info
+\end{tabular}}}\hfil
+}
+\vspace*{0.2cm}}
+\makeatother
+
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat*{\section}{\color{headcolor}\large\sf\bfseries}
+\titleformat*{\subsection}{\color{headcolor}\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+% Make nicer bullets
+\renewcommand{\labelitemi}{\ding{228}}
+
+\usepackage{booktabs,fontawesome5}
+%\usepackage[t1,scale=0.86]{sourcecodepro}
+
+\name{Fan Cheng}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+\info{%
+\raisebox{-0.05cm}{\imagetop{\faIcon{map-marker-alt}}} &  \imagetop{\begin{tabular}{@{}l@{}}Sydney,
+Australia.\end{tabular}}\\ %
+\faIcon{home} & \href{http://fancheng.me}{fancheng.me}\\% %
+%
+%
+\faIcon{envelope} & \href{mailto:fancheng.me@gmail.com}{\nolinkurl{fancheng.me@gmail.com}}\\%
+\faIcon{twitter} & \href{https://twitter.com/fanchengfc}{@fanchengfc}\\%
+\faIcon{github} & \href{https://github.com/ffancheng}{ffancheng}\\%
+\faIcon{linkedin} & \href{https://www.linkedin.com/in/fan-cheng}{fan-cheng}\\%
+%
+%
+%
+}
+
+
+%\usepackage{inconsolata}
+
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
+% Pandoc CSL macros
+
+
+\def\endfirstpage{\newpage}
+
+\begin{document}
+\maketitle
+
+
+\thispagestyle{empty}
+
+\section{Education and
+qualifications}\label{education-and-qualifications}
+
+\begin{tabular}{lll}
+  2019--2023 & Ph.D. in Statistics & Monash University, Australia \\ 
+  2016--2018 & M. in Applied Statistics & Central University of Finance and Economics, China \\ 
+  2012--2016 & B.Ec in Statistics & Central University of Finance and Economics, China \\ 
+  \end{tabular}
+
+\section{Employment history}\label{employment-history}
+
+\begin{tabular}{ll}
+  2022.10-- & \textbf{Senior Research Officer}, NSW Bureau of Crime Statistics and Research, Department of Communities and Justice \\ 
+  2020.07--2023.07 & \textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University \\ 
+   & - \href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data, 2021S2 (Purple Letter for Outstanding Unit Evaluation of Teaching)} \\ 
+   & - \href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S1, 2023S1 (Purple Letter)} \\ 
+   & - \href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis, 2020S2, 2021S2 (Purple Letter)} \\ 
+  2019.07-- & \textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library \\ 
+   & - \href{https://www.monash.edu/data-fluency/home}{Monash Data Fluency workshops} on R, Python, Git, Unix, HPC, etc. \\ 
+  2020.07--2020.12 & \textbf{Course Mentor}, Monash University Online Microcredential \href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\textit{Data Science: Data-Driven Decision Making}} \\ 
+  2018.07--2019.01 & \textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics \\ 
+  \end{tabular}
+
+\section{Internship experience}\label{internship-experience}
+
+\begin{tabular}{ll}
+  2016.09--2017.09 & \textbf{Big Data Analyst}, Shanghai Power Xene Digital Technology Company, Beijing, China \\ 
+  2016.03--2016.04 & \textbf{Research Assistant}, China Life Insurance Company Limited, Beijing, China \\ 
+  2015.01--2015.02 & \textbf{Consultant Assistant}, Industrial and Commercial Bank of China (ICBC), Hubei, China \\ 
+  \end{tabular}
+
+\section{Research experience}\label{research-experience}
+
+\begin{tabular}{ll}
+  2019.02-- & \textbf{Main Participant}, Monash Ph.D. project: Manifold Learning on Empirical Probability Distributions \\ 
+  \end{tabular}
+
+\begin{itemize}
+\tightlist
+\item
+  Supervised by \href{https://robjhyndman.com}{Prof.~Rob J Hyndman} and
+  \href{https://anastasiospanagiotelis.netlify.app/}{Associate
+  Prof.~Anastasios Panagiotelis}.
+\item
+  Successfully completed the confirmation and the mid-candidature
+  milestones.
+\item
+  Completed the main algorithm and finished all experiments using
+  MonARCH HPC Cluster.
+\item
+  Submitted the working paper titled
+  \href{https://arxiv.org/abs/2103.11773}{\emph{Computationally
+  Efficient Learning of Statistical Manifolds}}.
+\end{itemize}
+
+\begin{tabular}{ll}
+  2018.07--2019.01 & \textbf{Research Assistant}, National Natural Science Foundation of China \\ 
+  \end{tabular}
+
+\begin{itemize}
+\tightlist
+\item
+  Assisted in the Efficient Bayesian Flexible Density Methods with High
+  Dimensional Financial Data Project.
+\item
+  Completed the stochastic gradient descent application to the
+  multivariate response surface.
+\item
+  Completed the paper titled \emph{Volatility Analysis for Housing
+  Prices with Bayesian Response Surface Optimization}.
+\end{itemize}
+
+\begin{tabular}{ll}
+  2013.04--2014.04 & \textbf{Main Participant}, National Undergraduate Innovation and Entrepreneurship Training Program \\ 
+  \end{tabular}
+
+\begin{itemize}
+\tightlist
+\item
+  Initiated a municipal project, made overall arrangements for the
+  project, from research proposal, project fund application, plan of the
+  theoretical approaches and empirical analysis of the questionnaire
+  data.
+\item
+  Won the Excellent Prize upon the accomplishment of the research
+  project.
+\item
+  Completed the paper titled \emph{Feasibility Analysis for Developing
+  Commercial Insurance for Losing Only-child Problem}.
+\end{itemize}
+
+\section{Honours and awards}\label{honours-and-awards}
+
+\begin{tabular}{rl}
+  2022 & Graduate Research Completion Award (GRCA), Monash University \\ 
+  2021 & Runner-up for AMSI Winter School Participants Talk, \href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute} \\ 
+  2021 & ACEMS Business Analytics Prize for 2021, \href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \& Statistical Frontiers} \\ 
+  2019 & Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022 \\ 
+  2019 & Monash International Tuition Scholarship, Monash University, yearly from 2019 to 2022 \\ 
+  2018 & Outstanding Postgraduate Student, Central University of Finance and Economics (CUFE) \\ 
+  2017 & First Prize Academic Scholarship for Graduate Student, CUFE \\ 
+  2016 & Outstanding Undergraduate Student, CUFE \\ 
+  2016 & Scholarship for All-Round Development, CUFE, yearly from 2013 to 2016 \\ 
+  2016 & Scholarship for Excellent Academic Innovation, CUFE \\ 
+  2015 & Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China \\ 
+  2015 & Second Prize in National Undergraduate Mathematical Contest in Modeling \\ 
+  2015 & National Endeavor Scholarship, Ministry of Education of Beijing \\ 
+  2014 & Scholarship for Excellent Student Cadre, CUFE \\ 
+  2013 & Excellent Student Cadre, School of Statistics and Mathematics, CUFE \\ 
+  \end{tabular}
+
+\thispagestyle{empty}
+
+\section{Education and
+qualifications}\label{education-and-qualifications-1}
+
+\begin{tabular}{lll}
+  2019--2023 & Ph.D. in Statistics & Monash University, Australia \\ 
+  2016--2018 & M. in Applied Statistics & Central University of Finance and Economics, China \\ 
+  2012--2016 & B.Ec in Statistics & Central University of Finance and Economics, China \\ 
+  \end{tabular}
+
+\section{Employment history}\label{employment-history-1}
+
+\begin{tabular}{ll}
+  2022.10-- & \textbf{Senior Research Officer}, NSW Bureau of Crime Statistics and Research, Department of Communities and Justice \\ 
+  2020.07--2023.07 & \textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University \\ 
+   & - \href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data, 2021S2 (Purple Letter for Outstanding Unit Evaluation of Teaching)} \\ 
+   & - \href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S1, 2023S1 (Purple Letter)} \\ 
+   & - \href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis, 2020S2, 2021S2 (Purple Letter)} \\ 
+  2019.07-- & \textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library \\ 
+   & - \href{https://www.monash.edu/data-fluency/home}{Monash Data Fluency workshops} on R, Python, Git, Unix, HPC, etc. \\ 
+  2020.07--2020.12 & \textbf{Course Mentor}, Monash University Online Microcredential \href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\textit{Data Science: Data-Driven Decision Making}} \\ 
+  2018.07--2019.01 & \textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics \\ 
+  \end{tabular}
+
+\section{Internship experience}\label{internship-experience-1}
+
+\begin{tabular}{ll}
+  2016.09--2017.09 & \textbf{Big Data Analyst}, Shanghai Power Xene Digital Technology Company, Beijing, China \\ 
+  2016.03--2016.04 & \textbf{Research Assistant}, China Life Insurance Company Limited, Beijing, China \\ 
+  2015.01--2015.02 & \textbf{Consultant Assistant}, Industrial and Commercial Bank of China (ICBC), Hubei, China \\ 
+  \end{tabular}
+
+\section{Research experience}\label{research-experience-1}
+
+\begin{tabular}{ll}
+  2019.02-- & \textbf{Main Participant}, Monash Ph.D. project: Manifold Learning on Empirical Probability Distributions \\ 
+  \end{tabular}
+
+\begin{itemize}
+\tightlist
+\item
+  Supervised by \href{https://robjhyndman.com}{Prof.~Rob J Hyndman} and
+  \href{https://anastasiospanagiotelis.netlify.app/}{Associate
+  Prof.~Anastasios Panagiotelis}.
+\item
+  Successfully completed the confirmation and the mid-candidature
+  milestones.
+\item
+  Completed the main algorithm and finished all experiments using
+  MonARCH HPC Cluster.
+\item
+  Submitted the working paper titled
+  \href{https://arxiv.org/abs/2103.11773}{\emph{Computationally
+  Efficient Learning of Statistical Manifolds}}.
+\end{itemize}
+
+\begin{tabular}{ll}
+  2018.07--2019.01 & \textbf{Research Assistant}, National Natural Science Foundation of China \\ 
+  \end{tabular}
+
+\begin{itemize}
+\tightlist
+\item
+  Assisted in the Efficient Bayesian Flexible Density Methods with High
+  Dimensional Financial Data Project.
+\item
+  Completed the stochastic gradient descent application to the
+  multivariate response surface.
+\item
+  Completed the paper titled \emph{Volatility Analysis for Housing
+  Prices with Bayesian Response Surface Optimization}.
+\end{itemize}
+
+\begin{tabular}{ll}
+  2013.04--2014.04 & \textbf{Main Participant}, National Undergraduate Innovation and Entrepreneurship Training Program \\ 
+  \end{tabular}
+
+\begin{itemize}
+\tightlist
+\item
+  Initiated a municipal project, made overall arrangements for the
+  project, from research proposal, project fund application, plan of the
+  theoretical approaches and empirical analysis of the questionnaire
+  data.
+\item
+  Won the Excellent Prize upon the accomplishment of the research
+  project.
+\item
+  Completed the paper titled \emph{Feasibility Analysis for Developing
+  Commercial Insurance for Losing Only-child Problem}.
+\end{itemize}
+
+\section{Honours and awards}\label{honours-and-awards-1}
+
+\begin{tabular}{rl}
+  2022 & Graduate Research Completion Award (GRCA), Monash University \\ 
+  2021 & Runner-up for AMSI Winter School Participants Talk, \href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute} \\ 
+  2021 & ACEMS Business Analytics Prize for 2021, \href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \& Statistical Frontiers} \\ 
+  2019 & Monash Graduate Scholarship, Monash University, yearly from 2019 to 2022 \\ 
+  2019 & Monash International Tuition Scholarship, Monash University, yearly from 2019 to 2022 \\ 
+  2018 & Outstanding Postgraduate Student, Central University of Finance and Economics (CUFE) \\ 
+  2017 & First Prize Academic Scholarship for Graduate Student, CUFE \\ 
+  2016 & Outstanding Undergraduate Student, CUFE \\ 
+  2016 & Scholarship for All-Round Development, CUFE, yearly from 2013 to 2016 \\ 
+  2016 & Scholarship for Excellent Academic Innovation, CUFE \\ 
+  2015 & Excellent Prize in National Undergraduate Statistical Contest in Modeling, Statistical Education Society of China \\ 
+  2015 & Second Prize in National Undergraduate Mathematical Contest in Modeling \\ 
+  2015 & National Endeavor Scholarship, Ministry of Education of Beijing \\ 
+  2014 & Scholarship for Excellent Student Cadre, CUFE \\ 
+  2013 & Excellent Student Cadre, School of Statistics and Mathematics, CUFE \\ 
+  \end{tabular}
+
+\end{document}

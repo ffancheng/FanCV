@@ -68,7 +68,7 @@ Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). The effect of COVID-19 loc
 \hangindent=0.5em\hangafter=0
 Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). Distortion-corrected kernel density estimate on Riemannian
 
-\hangindent=2em\hangafter=0 manifolds.
+\hangindent=2em\hangafter=0 manifolds. (Under review)
 
 \hangindent=0.5em\hangafter=0
 Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv 

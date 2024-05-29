@@ -11,8 +11,8 @@ linkedin: fan-cheng
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "880020"
 output: 
-  vitae::hyndman 
-keep_tex: true
+  vitae::hyndman:
+    keep_tex: true
 header_includes:
   - \ExecuteBibliographyOptions{useprefix=true}
   - renewcommand{\bibfont}{\normalfont\fontsize{12}{15}\sffamily}
@@ -51,9 +51,9 @@ tribble(
   ~Start, ~End, ~Position,
   2022.10, NA, "\\textbf{Senior Research Officer}, NSW Bureau of Crime Statistics and Research, Department of Communities and Justice",
   2020.07, 2023.07, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
-  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data, 2021S2}",
-  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S1, 2023S1}",
-  NA, NA, "- \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis, 2020S2, 2021S2}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data, 2021S2 (Purple Letter for Outstanding Unit Evaluation of Teaching)}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S1, 2023S1 (Purple Letter)}",
+  NA, NA, "- \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis, 2020S2, 2021S2 (Purple Letter)}",
   2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
    NA, NA, "- \\href{https://www.monash.edu/data-fluency/home}{Monash Data Fluency workshops} on R, Python, Git, Unix, HPC, etc.",
   2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
@@ -139,6 +139,7 @@ awards <- tribble(
 ```{r awards, results='asis'}
 awards <- tribble(
   ~Year, ~Award,
+   # 2023, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2023S1, Monash Business School",
   2022, "Graduate Research Completion Award (GRCA), Monash University",
   2021, "Runner-up for AMSI Winter School Participants Talk, \\href{https://ws.amsi.org.au/}{Australian Mathematical Sciences Institute}",
   2021, "ACEMS Business Analytics Prize for 2021, \\href{https://acems.org.au}{ARC Centre of Excellence for Mathematical \\& Statistical Frontiers}",
