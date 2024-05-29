@@ -35,7 +35,7 @@ source("baretable.R")
 # Education and qualifications
 
 \begin{tabular}{lll}
-  2019-- & Ph.D. in Statistics & Monash University, Australia \\ 
+  2019--2023 & Ph.D. in Statistics & Monash University, Australia \\ 
         & Thesis: & \emph{Manifold Learning on Empirical Probability Distributions} \\
         & Supervisors: & \href{https://robjhyndman.com/}{Prof. Rob J Hydman} and \href{https://anastasiospanagiotelis.netlify.app/}{A/Prof. Anastasios Panagiotelis} \\        
   2016--2018 & M. in Applied Statistics & Central University of Finance and Economics, China \\ 
@@ -46,7 +46,7 @@ source("baretable.R")
 ```{r degrees, results='asis', eval=FALSE}
 tribble(
   ~Start, ~End, ~Degree, ~Institution,
-  2019, NA, "Ph.D. in Statistics", "Monash University, Australia",
+  2019, 2023, "Ph.D. in Statistics", "Monash University, Australia",
   # NA, NA, "Supervisors: \\href{https://robjhyndman.com/}{Prof. Rob J Hydman} and \\href{https://anastasiospanagiotelis.netlify.app/}{A/Prof. Anastasios Panagiotelis}", NA, 
   2016, 2018, "M. in Applied Statistics", "Central University of Finance and Economics, China",
   2012, 2016, "B.Ec in Statistics", "Central University of Finance and Economics, China"
@@ -61,14 +61,19 @@ tribble(
 # Working papers
 
 \hangindent=0.5em\hangafter=0
-Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv 
+Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). The effect of COVID-19 lockdowns on electricity demand in
 
-\hangindent=2em\hangafter=0 preprint arXiv:2103.11773. (Under review)
+\hangindent=2em\hangafter=0 Melbourne.
 
 \hangindent=0.5em\hangafter=0
 Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). Distortion-corrected kernel density estimate on Riemannian
 
 \hangindent=2em\hangafter=0 manifolds.
+
+\hangindent=0.5em\hangafter=0
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv 
+
+\hangindent=2em\hangafter=0 preprint arXiv:2103.11773. (Under review)
 
 # Research experience
 
@@ -122,13 +127,16 @@ awards <- tribble(
   * Completed the paper titled *Feasibility Analysis for Developing Commercial Insurance for Losing Only-child Problem*.
 
 
-# Teaching experience
+<!-- # Teaching experience -->
+
+# Employment history
 
 ```{r employment, results='asis'}
 tribble(
   ~Start, ~End, ~Position,
-  2020.07, NA, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
-  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S2}",
+  2022.10, NA, "\\textbf{Senior Research Officer}, Bureau of Crime Statistics and Research, Department of Communities and Justice",
+  2020.07, 2023.07, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
+  NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S1, 2023S1}",
   NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data, 2021S2}",
   NA, NA, "- \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis, 2020S2, 2021S2}",
   2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
@@ -137,7 +145,7 @@ tribble(
 ) %>%
   # arrange(-Start) %>%
   mutate(End = replace_na(as.character(End), "")) %>%
-  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  mutate(Years = paste0(format(Start ,drop0Trailing = F), "--", End)) %>%
   mutate(Years = ifelse(is.na(Start), "", Years)) %>% 
   select(Years, Position) %>%
   baretable()
@@ -145,9 +153,9 @@ tribble(
 
 # Conference presentations
 
-<!-- \hangindent=0.5em\hangafter=0 -->
+\hangindent=5em\hangafter=0
 
-<!-- - Invited talk, Anomaly detection and forecasting using machine learning methods, \href{http://www.cfenetwork.org/CFE2022/index.php}{The 16th International Conference on Computational and Financial Econometrics (CFE 2022)}, King's College London, UK, December 17-19, 2022. -->
+- Invited talk, Anomaly detection and forecasting using machine learning methods, \href{http://www.cfenetwork.org/CFE2022/index.php}{The 16th International Conference on Computational and Financial Econometrics (CFE 2022)}, King's College London, UK, December 17-19, 2022.
 
 - Contributed talk, Anomaly detection with kernel density estimation on manifolds, \href{http://www.compstat2022.org/index.php}{The 24th International Conference on Computational Statistics}, The University of Bologna, Italy, August 23-26, 2022.
 
@@ -250,6 +258,7 @@ tribble(
 ```{r awards, results='asis', eval=FALSE}
 awards <- tribble(
   ~Year, ~Award,
+  2023, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2023S1, Monash Business School",
   2022, "Purple Letter (Outstanding Unit Evaluation of Teaching) for Tutoring ETC5513 2022S1, Monash Business School",
   2022, "Purple Letter for Tutoring ETF3500 2021S2, Monash Business School", 
   2021, "Purple Letter for Tutoring ETC5513 2021S1, Monash Business School", 
