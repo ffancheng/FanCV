@@ -50,14 +50,16 @@ tribble(
 tribble(
   ~Start, ~End, ~Position,
   2022.10, NA, "\\textbf{Senior Research Officer}, NSW Bureau of Crime Statistics and Research, Department of Communities and Justice",
+  2024.07, NA, "\\textbf{Teaching Associate}, School of Economics, The University of Sydney",
+  NA, NA, "- \\href{https://www.sydney.edu.au/units/ECON4913/2024-S2C-ND-CC}{ECON4913/ECON6913 Topics in Economic History, 2024S2}",
   2020.07, 2023.07, "\\textbf{Teaching Associate}, Department of Econometrics and Business Statistics, Monash University",
   NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5523?year=2021}{ETC5523 Communicating with data, 2021S2 (Purple Letter for Outstanding Unit Evaluation of Teaching)}",
   NA, NA, "- \\href{https://handbook.monash.edu/2021/units/ETC5513?year=2021}{ETC5513 Collaborative and reproducible practices, 2021S1, 2022S1, 2023S1 (Purple Letter)}",
   NA, NA, "- \\href{https://handbook.monash.edu/2020/units/ETF5500?year=2020}{ETF3500/ETF5500 High Dimensional Data Analysis, 2020S2, 2021S2 (Purple Letter)}",
-  2019.07, NA, "\\textbf{Data Fluency Associate Instructor}, Library Research Division, Monash University Library",
+  2019.07, NA, "\\textbf{Associate Instructor}, Data Fluency Team, Monash University Library",
    NA, NA, "- \\href{https://www.monash.edu/data-fluency/home}{Monash Data Fluency workshops} on R, Python, Git, Unix, HPC, etc.",
-  2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.futurelearn.com/microcredentials/data-driven-decision-making?utm_source=faculty_website&utm_medium=monash_organic_referrer&utm_campaign=mc_jan}{\\textit{Data Science: Data-Driven Decision Making}}",
-  2018.07, 2019.01, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics"
+  2020.07, 2020.12, "\\textbf{Course Mentor}, Monash University Online Microcredential \\href{https://www.classcentral.com/course/data-driven-decision-making-18277}{\\textit{Data Science: Data-Driven Decision Making}}",
+  # 2018.07, 2019.01, "\\textbf{Research Assistant}, School of Statistics and Mathematics, Central University of Finance and Economics"
 ) %>%
   # arrange(-Start) %>%
   mutate(End = replace_na(as.character(End), "")) %>%
@@ -100,7 +102,7 @@ awards <- tribble(
   * Supervised by [Prof. Rob J Hyndman](https://robjhyndman.com) and [Associate Prof. Anastasios Panagiotelis](https://anastasiospanagiotelis.netlify.app/). 
   * Successfully completed the confirmation and the mid-candidature milestones.
   * Completed the main algorithm and finished all experiments using MonARCH HPC Cluster.
-  * Submitted the working paper titled [*Computationally Efficient Learning of Statistical Manifolds*](https://arxiv.org/abs/2103.11773).
+  <!-- * Submitted the working paper titled [*Computationally Efficient Learning of Statistical Manifolds*](https://arxiv.org/abs/2103.11773). -->
 
 ```{r researchcufe, results='asis'}
 awards <- tribble(
