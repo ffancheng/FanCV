@@ -61,19 +61,19 @@ tribble(
 # Working papers
 
 \hangindent=0.5em\hangafter=0
-Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). The effect of COVID-19 lockdowns on electricity demand in
+Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2024). Distortion corrected kernel density estimator on Riemannian manifolds. Journal of Computational and Graphical Statistics, 1–19. https://doi.org/10.1080/10618600.2024.2415543
 
-\hangindent=2em\hangafter=0 Melbourne.
-
-\hangindent=0.5em\hangafter=0
-Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). Distortion-corrected kernel density estimate on Riemannian
-
-\hangindent=2em\hangafter=0 manifolds. (Under review)
+\hangindent=2em\hangafter=0 manifolds.
 
 \hangindent=0.5em\hangafter=0
 Cheng, F., Hyndman, R. J., & Panagiotelis, A. (2021). Computationally Efficient Learning of Statistical Manifolds. arXiv 
 
 \hangindent=2em\hangafter=0 preprint arXiv:2103.11773. (Under review)
+
+\hangindent=0.5em\hangafter=0
+Cheng, F., Panagiotelis, A., & Hyndman, R. J. (2022). The effect of COVID-19 lockdowns on electricity demand in
+
+\hangindent=2em\hangafter=0 Melbourne.
 
 # Research experience
 
